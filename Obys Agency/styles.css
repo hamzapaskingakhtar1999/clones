@@ -58,11 +58,49 @@ body {
   font-size: 6.5vw;
   text-transform: uppercase;
   font-weight: 900;
+  /*   animation-name: anime; */
+  opacity: 0;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* NOW */
+@keyframes anime {
+  0% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 1;
+  }
+  48% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 500;
+    opacity: 0;
+  }
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    font-weight: 500;
+    color: transparent;
+    opacity: 1;
+    font-size: 5vw;
+  }
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+    opacity: 0;
+    font-size: 5vw;
+  }
 }
 
 #main {
   position: relative;
-  background-color: #111;
+  background-color: #030303;
 }
 
 #page1 {
