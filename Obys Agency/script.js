@@ -57,4 +57,20 @@ function loadingAnimation() {
   });
 }
 
+function cursorAnimation() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+
+  Shery.makeMagnet("#nav-part2 h4", {
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    duration: 1,
+  });
+}
+
 loadingAnimation();
+
+cursorAnimation();
